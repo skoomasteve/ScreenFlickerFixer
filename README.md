@@ -1,7 +1,7 @@
 # ScreenFlickerFixer
 A script that refreshes display configuration, this fixes screen flicker in many situations.   Works best when used as a login script, bound to a hotkey, or triggered by a device such as the Elgato Stream Deck. 
 
-This script is just a specific configuration of Timothy Mui's Set-ScreenResolutionEx.ps1 script (https://github.com/timmui) . It can be used to fix screen flicker which is common on windows machines using multiple displays.
+This script is just a specific configuration of Timothy Mui's Set-ScreenResolutionEx.ps1 script (https://github.com/timmui) . It can be used to fix screen flicker which is common on windows machines that use multiple displays.
  
  The way this script works to fix screen flicker is to quickly hop away from the current resolution and then back to the desired resolution for all connected displays: 
  Possible use case are running this as a login script or binding the script to a hotkey using another utility (I use the Elgato Streamdeck).  
