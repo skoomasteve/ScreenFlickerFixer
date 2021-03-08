@@ -10,6 +10,7 @@ This script is just a specific configuration of Timothy Mui's Set-ScreenResoluti
  -  The bottom of this script contains sample configuration for a three monitor setup which happens to be the exact configuration that I use.
  -  To setup for your purposes, change the first resolution of each display at the bottom of this script to something other than your desired resolution, then change the second resolution of each to the desired resolution
  - If you have one display, then you only need lines containing -deviceid 0  , two displays? then use  -deviceid 0 and -deviceid 1  , and so on. 
+ - Once you have a configuration that fixes your monitor flicker, you can run it as needed, schedule it, or trigger it.
 
 
 **example**: 
