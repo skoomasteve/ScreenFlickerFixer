@@ -1,4 +1,23 @@
-﻿# ------------------------------------------------------------------------ 
+﻿##Steven Soward | 2021 | MIT license || Acknowledgments below
+ 
+ ## The way this script works to fix screen flicker is to quickly hop away from the current resolution
+ ## and then back to the desired resolution for all connected displays: 
+ 
+ ##  how do I set it up for my computer?
+ ##  The bottom of this script contains sample configuration for a three monitor setup which happens to be the exact configuration that I use.
+ ##  To setup for your purposes, change the first resolution of each display at the bottom of this script to something other than your desired resolution,
+ ##  then change the second resolution of each to the desired resolution
+ 
+ ## If you have one display, then you only need lines containing -deviceid 0  , two displays? then use  -deviceid 0 and -deviceid 1  , and so on. 
+ ## 
+ ## For example, if you use two monitors, comment out or delete the lines with -deviceid 2 and make sure the final resolutions 
+ ## for devices 0 and 1 are your desired (or current) resolution
+ 
+ ## If you need
+ 
+ 
+ #Timothy Mui's code is below which we will use to set the screen resolutions. Both he and Andy Schneider deserve acknowledgement and thanks for their work creating the resolution script.
+# ------------------------------------------------------------------------ 
 # NAME: Set-ScreenResolutionEx.ps1 
 # AUTHOR: Timothy Mui (https://github.com/timmui) 
 # DATE: Jan. 7, 2015 
@@ -261,10 +280,16 @@ Add-Type $Code
 [Resolution.ScreenResolution]::ChangeResolution($width,$height,$DeviceID)  
 } 
 
+#end of Timothy's code
 
+#Our simple flicker fix code is below || This is a three monitor setup each with desired resolutions of 1920x1080 
+
+#False resolutions | (set to something other than the resolution you want) | experiment with different supported resolutions here if the flicker isn't resolved.  | comment out or add extra lines as needed. 
 Set-ScreenResolutionex -Width 1680 -Height 1050 -deviceid 0
 Set-ScreenResolutionex -Width 1600 -Height 900 -deviceid 1
 Set-ScreenResolutionex -Width 1680 -Height 1050 -deviceid 2
+
+#Desired resolutions | specify the desired resolution for your monitors | comment out or add extra lines as needed. 
 Set-ScreenResolutionex -Width 1920 -Height 1080 -deviceid 0
 Set-ScreenResolutionex -Width 1920 -Height 1080 -deviceid 2
 Set-ScreenResolutionex -Width 1920 -Height 1080 -DeviceID 1
