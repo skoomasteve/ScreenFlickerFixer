@@ -20,6 +20,6 @@ if you use two monitors, starting at line 288, comment out or delete the lines w
 
  #######################################################################################################
  
- #Timothy Mui's code is below which we will use to set the screen resolutions. Both he and Andy Schneider deserve acknowledgement and thanks for their work creating the resolution script.
+Both Timothy Mui and Andy Schneider deserve acknowledgement and thanks for their work creating the resolution script.
 
  #######################################################################################################
