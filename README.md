@@ -4,7 +4,7 @@ A script that refreshes display configuration, this fixes screen flicker in many
 This script is just a specific configuration of Timothy Mui's Set-ScreenResolutionEx.ps1 script (https://github.com/timmui) . It can be used to fix screen flicker which is common on windows machines that use multiple displays.
  
  The way this script works to fix screen flicker is to quickly hop away from the current resolution and then back to the desired resolution for all connected displays: 
- Possible use case are running this as a login script or binding the script to a hotkey using another utility (I use the Elgato Streamdeck).  
+ Possible use cases are running this as a login script or binding the script to a hotkey using another utility (I use the Elgato Streamdeck).  
  
  #  how do I set it up for my computer?
  -  The bottom of this script contains sample configuration for a three monitor setup which happens to be the exact configuration that I use.
