@@ -18,8 +18,8 @@ This script is just a specific configuration of Timothy Mui's Set-ScreenResoluti
 if you use two monitors, starting at line 288, comment out or delete the lines with -deviceid 2 and make sure the final resolutions for devices 0 and 1 are your desired (or current) resolution, then run the script.  If you don't see an improvement, try different "false resolutions"
  
 
- ###########################################################################################
+ #########################################################
  
 Both Timothy Mui and Andy Schneider deserve acknowledgement and thanks for their work creating the resolution script.
 
- ###########################################################################################
+ #########################################################
